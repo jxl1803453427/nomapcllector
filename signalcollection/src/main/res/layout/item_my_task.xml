@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <!-- <LinearLayout
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:orientation="vertical"
+             android:id="@+id/linearLayout">
+
+
+
+             &lt;!&ndash;<TextView&ndash;&gt;
+             &lt;!&ndash;android:id="@+id/tvPointNum"&ndash;&gt;
+             &lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;
+             &lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;
+             &lt;!&ndash;android:text="包含%d个信息点"&ndash;&gt;
+             &lt;!&ndash;android:textColor="@color/gray"&ndash;&gt;
+             &lt;!&ndash;android:textSize="13sp" />&ndash;&gt;
+
+             &lt;!&ndash;<TextView&ndash;&gt;
+             &lt;!&ndash;android:id="@+id/tvOutDate"&ndash;&gt;
+             &lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;
+             &lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;
+             &lt;!&ndash;android:layout_marginTop="5dp"&ndash;&gt;
+             &lt;!&ndash;android:text="将于2016-07-19 20:00 过期"&ndash;&gt;
+             &lt;!&ndash;android:textColor="@color/gray"&ndash;&gt;
+             &lt;!&ndash;android:textSize="13sp" />&ndash;&gt;
+         </LinearLayout>-->
+
+        <TextView
+            android:id="@+id/tvAuditStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="审核中"
+            android:textColor="@color/text_color_gray"
+            android:textSize="@dimen/text_size_content_sub"/>
+
+        <TextView
+            android:id="@+id/tvAreaName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="XX酒店"
+            android:textColor="@color/text_color_black"
+            android:textSize="@dimen/text_size_content_sub"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divider_line_list"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+</LinearLayout>

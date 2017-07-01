@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="320dp"
+              android:layout_height="wrap_content"
+              android:background="@drawable/shape_dialog"
+              android:orientation="vertical"
+              android:padding="8dp">
+
+    <ImageView
+
+        android:id="@+id/iv_progress"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:scaleType="centerInside"
+        android:src="@mipmap/ic_progress"/>
+
+    <TextView
+        android:id="@+id/tv_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:text="正在检测手机是否可用于采集…"/>
+
+
+    <TextView
+        android:id="@+id/tv_memory"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:text="手机的RAM是否满足条件"
+        android:textColor="@color/gray"/>
+
+    <TextView
+        android:id="@+id/tv_signal"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:text="手机是否能扫描到信号"
+        android:textColor="@color/gray"/>
+
+    <TextView
+        android:id="@+id/tv_signal_normal"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:text="手机采集的信号是否正常"
+        android:textColor="@color/gray"/>
+
+    <TextView
+        android:id="@+id/tv_sure"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="确定"
+        android:textColor="@color/colorPrimary"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/layout_double_btn"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/tv_check_again"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="重新检查"
+            android:textColor="@color/colorPrimary"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/grayLine"/>
+
+        <TextView
+            android:id="@+id/tv_give_up_check"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="放弃检查"
+            android:textColor="@color/gray"/>
+    </LinearLayout>
+</LinearLayout>

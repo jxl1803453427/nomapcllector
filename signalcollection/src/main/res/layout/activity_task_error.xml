@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:padding="10dp"
+              tools:context="com.example.signalcollection.activity.TaskErrorActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请慎重确认附件300米内此商户是否存在，商户移动或更名并不属于不存在，如遇以上两种情况请按商户存在做任务"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="商户原址顺车流全景照"/>
+
+            <ImageView
+                android:id="@+id/iv1"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:background="@drawable/shape_rect_grey"
+                android:scaleType="center"
+                android:src="@mipmap/ic_camera"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="商户原址逆车流全景照"/>
+
+            <ImageView
+                android:id="@+id/iv2"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:background="@drawable/shape_rect_grey"
+                android:scaleType="center"
+                android:src="@mipmap/ic_camera"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_reason"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_rect_grey"
+        android:gravity="left"
+        android:hint="在这里填写上报原因……"
+        android:padding="4dp"/>
+
+    <TextView
+        android:id="@+id/btSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/selector_blue_round_rect"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="提交"
+        android:textColor="@color/colorWindBg"/>
+
+</LinearLayout>

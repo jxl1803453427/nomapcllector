@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+
+            <TextView
+                android:id="@+id/tvInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="您正在对编号为%d的点进行修改"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/shape_rect_grey"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="名称："
+                    android:textColor="@color/gray"/>
+
+                <TextView
+                    android:id="@+id/tvName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:textColor="@color/gray"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/shape_rect_grey"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="类型： "
+                    android:textColor="@color/gray"/>
+
+                <TextView
+                    android:id="@+id/tvType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/shape_rect_grey"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="3dp"
+                    android:text="楼层： "
+                    android:textColor="@color/gray"/>
+
+                <Spinner
+                    android:id="@+id/spFloor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_point_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/shape_rect_grey"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="采集点类型： "
+                    android:textColor="@color/gray"/>
+
+                <TextView
+                    android:id="@+id/tv_point_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_exprop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:splitMotionEvents="false"
+                android:layout_marginTop="8dp">
+
+
+                <ImageView
+                    android:id="@+id/iv1"
+                    android:layout_width="160dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/shape_rect_grey"
+                    android:padding="2dp"
+                    android:scaleType="center"
+                    android:src="@mipmap/ic_camera"/>
+
+                <ImageView
+                    android:id="@+id/iv2"
+                    android:layout_width="160dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="right"
+                    android:background="@drawable/shape_rect_grey"
+                    android:padding="2dp"
+                    android:scaleType="center"
+                    android:src="@mipmap/ic_camera"/>
+
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/fl_in"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:splitMotionEvents="false"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_in"
+                    android:layout_width="160dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="right"
+                    android:background="@drawable/selector_blue_round_rect"
+                    android:gravity="center"
+                    android:text="店内采集"
+                    android:textColor="@color/colorWindBg"/>
+
+                <TextView
+                    android:id="@+id/tv_out"
+                    android:layout_width="160dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/selector_blue_round_rect"
+                    android:gravity="center"
+                    android:text="店外采集"
+                    android:textColor="@color/colorWindBg"/>
+            </FrameLayout>
+
+
+            <TextView
+                android:id="@+id/btCollect"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/selector_blue_round_rect"
+                android:gravity="center"
+                android:text="开始采集"
+                android:textColor="@color/colorWindBg"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/btNext"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_gravity="bottom"
+        android:layout_margin="10dp"
+        android:background="@drawable/selector_blue_round_rect"
+        android:gravity="center"
+        android:text="保存"
+        android:textColor="@color/colorWindBg"/>
+</FrameLayout>

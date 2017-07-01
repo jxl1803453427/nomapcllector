@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">信号采集</string>
+    <string name="agreement"><Data><![CDATA[我已经阅读并同意<font color="#ff0000">《注册协议及声明》</font>]]></Data></string>
+</resources>

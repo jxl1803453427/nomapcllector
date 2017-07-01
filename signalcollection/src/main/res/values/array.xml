@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="bank">
+        <item>中国工商银行</item>
+        <item>中国农业银行</item>
+        <item>中国建设银行</item>
+        <item>中国银行</item>
+        <item>招商银行</item>
+        <item>交通银行</item>
+        <item>中信银行</item>
+        <item>兴业银行</item>
+        <item>上海浦东发展银行</item>
+        <item>中国民生银行</item>
+        <item>中国光大银行</item>
+        <item>中国邮政储蓄银行</item>
+        <item>平安银行</item>
+        <item>华夏银行</item>
+        <item>北京银行</item>
+        <item>广发银行</item>
+        <item>上海银行</item>
+        <item>宁波银行</item>
+        <item>其他</item>
+    </array>
+
+    <array name="status">
+        <item>全部</item>
+        <item>已领取</item>
+        <item>待领取</item>
+    </array>
+</resources>

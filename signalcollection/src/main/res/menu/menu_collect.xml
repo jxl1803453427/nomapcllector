@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context=".activity.TasklistActivity">
+
+
+    <item
+        android:id="@+id/action_take_audit_photo"
+        android:orderInCategory="100"
+        android:title="拍摄审核照片"
+        app:showAsAction="never"/>
+
+
+    <item
+        android:id="@+id/actionHistory"
+        android:orderInCategory="100"
+        android:title="采集历史"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/actionError"
+        android:orderInCategory="100"
+        android:title="异常商圈上报"
+        app:showAsAction="never"/>
+</menu>

@@ -1,0 +1,22 @@
+<resources>
+    <declare-styleable name="ClipImageView">
+        <attr name="civHeight" format="integer"/>
+        <attr name="civWidth" format="integer"/>
+        <attr name="civTipText" format="string"/>
+        <attr name="civTipTextSize" format="dimension"/>
+        <attr name="civMaskColor" format="color"/>
+        <attr name="civClipPadding" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="SideBarView">
+        <attr name="letterSize" format="dimension"/>
+        <attr name="letterColor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="StepsView">
+        <attr name="stepsNum" format="integer"/>
+        <attr name="thumbRadius" format="dimension"/>
+        <attr name="barColor" format="color"/>
+        <attr name="progressColor" format="color"/>
+    </declare-styleable>
+</resources>

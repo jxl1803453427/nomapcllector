@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/lv_city"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:scrollbars="none"/>
+
+        <TextView
+            android:id="@+id/tv_letter"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="F"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            android:visibility="gone"/>
+
+        <com.example.signalcollection.view.SideBarView
+            android:id="@+id/sb"
+            android:layout_width="20dp"
+            app:letterSize="14sp"
+            app:letterColor="@color/colorPrimary"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

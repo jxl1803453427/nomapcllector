@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.example.signalcollection.activity.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/fmContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomBar"/>
+
+    <LinearLayout
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/grayLine"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:background="@android:color/white"
+            android:layout_height="wrap_content">
+
+            <RadioGroup
+                android:id="@+id/rg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb1"
+                    style="@style/StyleRadioButton"
+                    android:checked="true"
+                    android:drawableTop="@drawable/selector_collection"
+                    android:text="采集"/>
+
+
+                <RadioButton
+                    android:id="@+id/rb3"
+                    style="@style/StyleRadioButton"
+                    android:drawableTop="@drawable/selector_help"
+                    android:text="攻略"/>
+
+
+                <RadioButton
+                    android:id="@+id/rb2"
+                    style="@style/StyleRadioButton"
+                    android:drawableTop="@drawable/selector_message"
+                    android:text="消息"/>
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_msg_count"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/shap_red_round"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/colorWindBg"
+                android:textSize="10sp"
+                android:visibility="gone"/>
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>

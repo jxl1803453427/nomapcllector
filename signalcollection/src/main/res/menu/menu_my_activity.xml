@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context=".activity.TasklistActivity">
+
+    <item
+        android:id="@+id/update_status"
+        android:orderInCategory="100"
+        android:title="更新数据提交状态"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/submit_photo"
+        android:orderInCategory="100"
+        android:title="重传已任务提交的照片"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/upload"
+        android:background="#fff"
+        android:orderInCategory="100"
+        android:title="重传已上传失败的照片"
+        app:showAsAction="never"/>
+</menu>
